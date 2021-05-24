@@ -1,7 +1,7 @@
 package pc.set;
 
 /**
- * 
+ * teste push
  * Interface for a set. 
  *
  * @param <E> Type of elements in the set.
