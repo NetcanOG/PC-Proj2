@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>README</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">Projecto de Programação</h1>
+
+<p><a href="https://www.dcc.fc.up.pt/%7Eedrdo/aulas/pc">Programação Concorrente</a></p>
+
+<p><strong>Última actualização</strong>: 23 de Maio de 2021.</p>
+
+<h2 id="toc_1">0. Sumário</h2>
+
+<p>Neste projecto pede-se o desenvolvimento de código concorrente 
+para <strong>(1)</strong> implementações de conjuntos, <strong>(2)</strong> um crawler de páginas web, e ainda <strong>(3)</strong> a análise de bugs em código concorrente usando o Cooperari.</p>
+
+<p>O projecto pode ser realizado <strong>individualmente ou em grupos de 2 alunos no máximo</strong>, devendo ser entregue até <strong>11 de Junho</strong>. A entrega deve ser feita via Teams submetendo:</p>
+
+<ul>
+<li>Um arquivo ZIP com o seu código;</li>
+<li>Um relatório em formato PDF descrevendo o trabalho que fez.</li>
+</ul>
+
+<p>É fornecido um <a href="pc_projecto.zip">arquivo ZIP com o código base</a> para a realização do trabalho. O código está pronto para uso em replit.com caso pretenda, mas no que toca às avaliações de desempenho pedidas neste enunciado deverá usar um computador seu para resultados mais fiáveis. </p>
+
+<p>Para compilar o código deverá usar o script <code>compile.sh</code>: </p>
+
+<div><pre class="line-numbers"><code class="language-none">./compile.sh</code></pre></div>
+
+<p>Para executar um programa deverá usar o script <code>run.sh</code>:</p>
+
+<div><pre class="line-numbers"><code class="language-none">./run.sh nome.da.classe</code></pre></div>
+
+<h2 id="toc_2">1. Implementações de um &quot;hash set&quot;</h2>
+
+<h3 id="toc_3">1.1. Estrutura base</h3>
+
+<p>O interface <code>ISet</code> em <code>src/pc/ISet.java</code> exprime um TAD para um conjunto com as seguintes operações:</p>
+
+<ul>
+<li><code>size()</code>: devolve o tamanho do conjunto;</li>
+<li><code>add(e)</code>: adiciona elemento <code>e</code> ao conjunto;</li>
+<li><code>remove(e)</code>: remove elemento <code>e</code> do conjunto;</li>
+<li><code>contains(e)</code>: testa se elemento <code>e</code> pertence ao conjunto.</li>
+</ul>
+
+<p>Consideramos implementações deste interface
+usando uma representação interna na forma de uma tabela de &quot;hashing&quot;
+com o típico esquema de endereço aberto: os elementos 
+do conjuntos são dispersos por entradas na tabela de &quot;hashing&quot;, 
+em que cada entrada contém uma lista ligada de elementos implementada por objectos de tipo <a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html">LinkedList</a>); note que esta classe não tem qualquer mecanismo de sincronização entre threads.</p>
+
+<p>Para simplificar as implementações:</p>
+
+<ul>
+<li>as operações <code>add(e)</code>, <code>remove(e)</code> e <code>contains(e)</code> lançam <code>IllegalArgumentException</code> quando <code>e == null</code>; </li>
+<li>a tabela de &quot;hashing&quot; não é redimensionada (&quot;rehashed&quot;) 
+como usual quando atinge um certo nível de preenchimento.</li>
+</ul>
+
+<p>Deverá usar e adaptar se achar conveniente o programa <code>SetTest</code> para validação básica das suas implementações.</p>
+
+<p>Deverá usar e adaptar se achar conveniente o programa <code>SetTest</code> para validação básica das suas implementações, por exemplo para <code>LHashSet0</code>:</p>
+
+<div><pre class="line-numbers"><code class="language-none">$ ./run.sh pc.set.SetTest pc.set.LHashSet0
+all seems ok :)</code></pre></div>
+
+<!--
+Não serão usados testes Cooperari para validação,
+já que a versão actual não suporta "yield points" em associação a todas as classes / bibliotecas que serão necessários nas implementações consideradas abaixo.
+-->
+
+<h3 id="toc_4">1.2. Implementações</h3>
+
+<h4 id="toc_5"><code>LHashSet0</code></h4>
+
+<p>O código já dado em <code>LHashSet0</code> define uma implementação concorrente de um conjunto em que exclusão mútua é garantida usando métodos <code>synchronized</code>. Deverá usá-la como ponto de partida para a implementação concorrente das seguintes classes.</p>
+
+<h4 id="toc_6"><code>LHashSet1</code></h4>
+
+<p>Substituindo o uso de <code>synchronized</code>,  a implementação deve empregar um objecto <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantLock.html"><code>ReentrantLock</code></a> para garantir acesso exclusivo aos dados para todas as operações (<code>add</code>, <code>contains</code>, <code>remove</code> e <code>size</code>).</p>
+
+<h4 id="toc_7"><code>LHashSet2</code></h4>
+
+<p>Partindo da implementação anterior, observe que <code>contains</code> e <code>remove</code> não alteram um conjunto e que podemos empregar antes <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html"><code>ReentrantReadWriteLock</code></a> tal que <code>add</code> e <code>remove</code> adquirem &quot;locks&quot; de escrita enquanto <code>contains</code> e <code>size</code> só precisam de &quot;locks&quot; de leitura. Desta forma operações de leitura podem proceder concorrentemente, enquanto as de escrita terão na mesma exclusão mútua no acesso aos dados.</p>
+
+<h4 id="toc_8"><code>LHashSet3</code></h4>
+
+<p>Em vez de um &quot;lock&quot; global,  considere um &quot;lock&quot; por entrada na tabela de &quot;hashing&quot;, tal que uma thread só bloqueia se houver outra thread a aceder à mesma entrada da tabela. Podemos então ter concorrência efectiva nas operações <code>add()</code>, <code>contains()</code> e <code>remove()</code> executadas threads diferentes quando estas não acederem à mesma entrada na tabela de hashing.</p>
+
+<p>Sugere-se a criação de um array de objectos <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReentrantReadWriteLock.html"><code>ReentrantReadWriteLock</code></a>  logo no construtor
+com a mesma dimensão da tabela de &quot;hashing&quot;, ou converter
+as entradas da tabela em pares &quot;lock&quot;/lista.</p>
+
+<p>Remova na implementação o campo <code>size</code> pois a sua actualização iria requerer na mesma um &quot;lock&quot; exclusivo. 
+Em vez disso o método <code>size()</code> deve somar o tamanho de todas as listas para determinar o tamanho do conjunto, adquirindo primeiro <strong>todos</strong> os locks e libertando-os depois da contagem.</p>
+
+<h4 id="toc_9"><code>STMHashSet</code></h4>
+
+<p>Implemente agora o conjunto usando STM, armazenando os dados com o  forma já esquematizada em <code>STMHashSet.java</code>. Note que deverá percorrer e actualizar nós de uma lista duplamente ligada de forma explícita, em vez de usar objectos <code>LinkedList</code> (que não seriam adequados neste caso).</p>
+
+<p><strong>Nota:</strong> para comparar elementos guardados no conjunto deverá empregar como usual em Java o método <code>equals()</code> e não o operador <code>==</code>.</p>
+
+<h3 id="toc_10">1.3. Avaliação de desempenho</h3>
+
+<p>O programa em <code>SetBenchmark.java</code> permite avaliar o desempenho de uma implementação de conjuntos. Pode ser executado usando:</p>
+
+<div><pre class="line-numbers"><code class="language-none">./run.sh pc.set.SetBenchmark nome_da_classe</code></pre></div>
+
+<p>onde <code>nome_da_classe</code> é uma classe que implementa o interface <code>ISet</code>, por exemplo <code>pc.set.LHashSet0</code>:</p>
+
+<div><pre class="line-numbers"><code class="language-none">$ ./run.sh pc.set.LHashSet0
+1 threads using LHashSet0 ... 9.72 Mops/s
+2 threads using LHashSet0 ... 3.90 Mops/s
+4 threads using LHashSet0 ... 3.23 Mops/s
+8 threads using LHashSet0 ... 3.01 Mops/s</code></pre></div>
+
+<p>O programa varia o nº de threads activas de 1 a 8 em múltiplos de 2). Para cada nº de threads, o programa executa os seguintes passos: cria um conjunto da classe especificadas, executa operações sobre o conjunto durante 10 segundos, e depois apresenta o desempenho do conjunto expresso em milhões de operações por segundo (<code>Mops/s</code>). 
+As operações sobre o conjunto executadas durante os 10 segundos são <code>add()</code>, <code>remove()</code> e <code>contains()</code> numa proporção de 10 %, 10 % e 80 % respectivamente. </p>
+
+<p>Use o programa uma avaliação do desempenho de <code>LHashSet0</code> e das outra classes que implementou, tirando a média do tempo de 5 execuções para cada cada classe e configuração do nº de threads.
+No relatório apresente os resultados na forma de uma tabela ou um gráfico e as conclusões principais que pode tirar dos mesmos. Para resultados tão fiáveis quanto possíveis, use o seu PC e não o ReplIt, e não tenha activos outros programas para além do estritamente necessário (ex. apenas o terminal da linha de comandos). </p>
+
+<h2 id="toc_11">2. Crawler de páginas web</h2>
+
+<h3 id="toc_12">2.1. Estrutura base</h3>
+
+<p>Em <code>src/pc/crawler</code> é disponibilizado o código para um &quot;crawler&quot; de páginas web que opera  de forma sequencial, e ainda para um servidor HTTP simples de conteúdos estáticos. </p>
+
+<p>Ao encontrar conteúdo HTML, o &quot;crawler&quot; pesquisa no ficheiro &quot;links&quot; do tipo (<code>&lt; ahref=&quot;...&quot; &gt;</code>) para páginas ou outros ficheiros no mesmo servidor, tendo o cuidado de não descarregar ficheiros repetidos. </p>
+
+<p>O objectivo é programar um crawler que opere de forma concorrente (e correcta!) isto é, que empregue várias threads descarregando e processando várias páginas ao mesmo tempo, de novo sem descarregar páginas repetidas como o crawler sequencial. Deve ainda avaliar o desempenho da sua implementação.</p>
+
+<p><img src="crawler.png" alt="Operação do crawler"></p>
+
+<h4 id="toc_13">Servidor</h4>
+
+<p>O código do servidor é dado em <code>WebServer.java</code>.
+Pode iniciar o mesmo usando o script <code>wserver.sh [home] [threads] [port]</code>, onde:</p>
+
+<ul>
+<li> <code>home</code> é o directório raíz de páginas a servir <code>cooperari-0.4/doc/javadoc</code> (a documentação Javadoc do Cooperari que pode servir de teste);</li>
+<li> <code>threads</code> é o número de threads empregue internamente na resposta a pedidos, 4 por omissão;</li>
+<li> <code>port</code> é a porta usar, 8123 por omissão - poderá por exemplo abrir um browser no endereço <code>http://localhost:8123</code> para interação com o servidor.</li>
+</ul>
+
+<div><pre class="line-numbers"><code class="language-none">$ ./run.sh pc.crawler.WebServer
+20 May 2021 21:36:26 GMT | Home: cooperari-0.4/doc/javadoc
+20 May 2021 21:36:26 GMT | Port: 8123
+20 May 2021 21:36:26 GMT | Threads: 4
+20 May 2021 21:36:26 GMT | Starting server ... 
+20 May 2021 21:36:26 GMT | Server started /0:0:0:0:0:0:0:0:8123
+20 May 2021 21:36:35 GMT | 1 | Request for &#39;/constant-values.html&#39;
+20 May 2021 21:36:35 GMT | 1 | Sending /constant-values.html (text/html, 12024 bytes)
+20 May 2021 21:36:35 GMT | 2 | Request for &#39;/stylesheet.css&#39;
+20 May 2021 21:36:35 GMT | 3 | Request for &#39;/script.js&#39;
+20 May 2021 21:36:35 GMT | 2 | Sending /stylesheet.css (application/octet-stream, 12842 bytes)
+20 May 2021 21:36:35 GMT | 3 | Sending /script.js (application/octet-stream, 827 bytes)
+...</code></pre></div>
+
+<h4 id="toc_14">Crawler sequencial</h4>
+
+<p>O código do &quot;crawler&quot; sequencial é dado em <code>SequentialCrawler</code>.
+Pode iniciar o mesmo usando o script <code>scrawl.sh [root_url]</code>, onde:
+<code>root_url</code> é o URL de partida, <code>http://localhost:8123</code> por omissão;</p>
+
+<div><pre class="line-numbers"><code class="language-none">$ ./run.sh pc.crawler.SequentialCrawler
+20 May 2021 21:43:10 GMT | Starting at http://127.0.0.1:8123/
+20 May 2021 21:43:10 GMT | 1 | http://127.0.0.1:8123/ | 200 | 964 bytes | text/html
+20 May 2021 21:43:10 GMT | 2 | http://127.0.0.1:8123/constant-values.html | 200 | 12024 bytes | text/html
+20 May 2021 21:43:10 GMT | 3 | http://127.0.0.1:8123/overview-tree.html | 200 | 37017 bytes | text/html
+20 May 2021 21:43:10 GMT | 4 | http://127.0.0.1:8123/index.html | 200 
+...
+20 May 2021 21:43:11 GMT | 353 | http://127.0.0.1:8123/org/cooperari/feature/data/class-use | 200 | 1042 bytes | text/html
+20 May 2021 21:43:11 GMT | 354 | http://127.0.0.1:8123/org/cooperari/feature/thread/class-use | 200 | 1798 bytes | text/html
+Done: 354 transfers in 1115 ms (317.49 transfers/s)</code></pre></div>
+
+<h3 id="toc_15">2.2. Implementação do crawler concorrente</h3>
+
+<p>Implemente o crawler concorrente em <code>ConcurrentCrawler.java</code> e teste-o com o script <code>./ccrawl.sh t url</code> onde <code>t</code> é o número de threads a usar e <code>url</code> é o ponto de partida (<code>http://localhost:8123</code> de novo por omissão).</p>
+
+<p>A parte da lógica de download e extração de links já é dada em <code>BaseCrawler.java</code> (<code>BaseCrawler</code> é a classe base de <code>SequentialCrawler</code> e <code>ConcurrentCrawler</code>) através dos métodos <code>download</code> e <code>parseLinks</code>.</p>
+
+<p>Pode usar para sua implementação classes da Java API base de threads e outras em <code>java.util.concurrent</code> excepto as relacionadas com &quot;thread pools&quot; (deve criar qualquer thread usada pelo &quot;crawler&quot; de forma explícita). A abordagem mais imediata será tentar generalizar (de forma correcta) o algoritmo do crawler  sequencial para um contexto concorrente.</p>
+
+<p>No relatório apresente uma descrição da sua implementação, em particular da lógica de execução concorrente e manipulação de estado partilhado e sincronização que haja entre threads.</p>
+
+<h3 id="toc_16">2.3. Teste e avaliação de desempenho</h3>
+
+<p>Pode testar e avaliar inicialmente o seu &quot;crawler&quot; sobre a documentação Javadoc do Cooperari ou sobre o directório raíz do projecto. </p>
+
+<p>Quando a sua implementação estiver estável poderá usar
+a documentação Javadoc do JDK 8 em formato HTML para uma avaliação mais intensiva - baixe o arquivo <a href="jdk8-javadoc.zip"><strong>jdk8-javadoc.zip</strong></a> contendo esse material. Então:</p>
+
+<ul>
+<li>Faça uma avaliação do desempenho do seu &quot;crawler&quot; concorrente, desligando a opção de &quot;verbose output&quot;,  e calculando a média do tempo de 5 execuções do crawler concorrente variando o número de threads do crawler de 1 a 8 em múltiplos de 2 (1,2,4,8).</li>
+<li> No relatório apresente os resultados na forma de uma tabela ou de um gráfico e as conclusões principais que podem tirar.</li>
+</ul>
+
+<h2 id="toc_17">3. Análise de &quot;bugs&quot; numa &quot;count-down latch&quot;</h2>
+
+<h3 id="toc_18">3.1 Código</h3>
+
+<p>Em <code>src/pc/cdl</code> encontra:</p>
+
+<ul>
+<li><code>CountDownLatch.java</code>: ficheiro contendo as implementação correctas e incorrectas de uma &quot;count-down latch&quot; que vimos nas aulas (ver slides das aulas teóricas);</li>
+<li><code>Test.java</code>: programa de teste para as implementações. </li>
+</ul>
+
+<p>Use </p>
+
+<div><pre class="line-numbers"><code class="language-none">./c.java.sh pc.cdl.Test &lt;n&gt;</code></pre></div>
+
+<p>para executar o programa de teste onde <code>&lt;n&gt;</code> é um valor de 1 a 4, por exemplo:</p>
+
+<div><pre class="line-numbers"><code class="language-none">$ ./cjava.sh pc.cdl.Test 1
+Configuring load-time weaving ...
+JAR file for &#39;pc.cdl.Test&#39; saved to &#39;./cdata/pc.cdl.Test-cooperari.jar&#39;
+[&lt;0&gt;] --- start ---
+...
+[&lt;0&gt;] --- start ---
+[&lt;0&gt;] class = pc.cdl.CountDownLatch_Bug1, n = 2
+[AW0] wait 2
+[CD1] 1
+[AW1] wait 1
+[CD0] 0
+[AW0] done
+    &gt; trials: 4 time: 203 ms coverage: 39.0 % (16 / 41 yp)
+    &gt; failure trace: &#39;/Users/edrdo/Desktop/Worklog/2021/aulas/pc/homepage/projecto/cdata/pc.cdl.Test/pc.cdl.Test.4.trace.log&#39;</code></pre></div>
+
+<p>Executado a forma acima, o programa irá lançar 4 threads, 2 das quais invocam o método <code>countDown()</code> e outras 2 o método <code>await()</code>. Pode também executar <code>cjava pc.cdl.Test 0</code> para que o programa empregue a implementação correcta da &quot;count-down latch&quot;.</p>
+
+<h3 id="toc_19">3.2. Análise de bugs</h3>
+
+<p>Exponha no relatório uma análise da execução do programa de teste usando o Cooperari para cada uma das 4 implementações incorrectas. 
+Na sua análise faça uma relação com os logs de erro gerados pelo Cooperari, em particular os passos relevantes das threads envolvidas que levam à falha dos testes.</p>
+
+
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</body>
+
+</html>
