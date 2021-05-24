@@ -1,7 +1,6 @@
 package pc.set;
 
 /**
- * teste ssh2
  * Interface for a set. 
  *
  * @param <E> Type of elements in the set.
