@@ -50,7 +50,7 @@ public class LHashSet3<E> implements ISet<E>{
   }
   
   private LinkedList<E> getEntry(E elem) {
-    return table[Math.abs(elem.hashCode() % table.length)];
+    return table[getEntryMath(elem)];
   }
   
   private int getEntryMath(E elem){
