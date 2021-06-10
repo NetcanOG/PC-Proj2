@@ -25,11 +25,11 @@ public class ConcurrentCrawler extends BaseCrawler{
     this.thread = new Thread[numberOfThreads];
   }
 
-  class Bob{
+  class Structures{
     private LinkedList<URL> toVisit;
     private HashSet<URL> seen;
 
-    public Bob(){
+    public Structures(){
       toVisit = new LinkedList<>();
       seen = new HashSet<>();
     }
@@ -52,10 +52,10 @@ public class ConcurrentCrawler extends BaseCrawler{
     }
   }
 
-  class Wendy{
+  class BooleanArray{
     Boolean[] threadUse;
     
-    Wendy(){
+    BooleanArray(){
       threadUse = new Boolean[numberOfThreads];
     }
 
@@ -82,26 +82,26 @@ public class ConcurrentCrawler extends BaseCrawler{
   @Override
   public void crawl(URL root) {
     long t = System.currentTimeMillis();
-    Bob bob = new Bob();
-    Wendy wendy = new Wendy();
+    Structures structures = new Structures();
+    BooleanArray booleanArray = new BooleanArray();
     log("Starting at %s", root);
-    bob.parsing(new ArrayList<URL>(Arrays.asList(root)));    
+    structures.parsing(new ArrayList<URL>(Arrays.asList(root)));    
 
     for(int i = 0; i < numberOfThreads; i++){
       final int id = i;
       thread[i] = new Thread(() -> {
         URL url;
         while(true) {
-          url = bob.removeFromList();
+          url = structures.removeFromList();
           if(url != null){
-            wendy.setThread(id, true);
+            booleanArray.setThread(id, true);
             File htmlContents = download(rid.incrementAndGet(), url);
             if (htmlContents != null){
               ArrayList<URL> links = parseLinks(url, htmlContents);
-              bob.parsing(links);
+              structures.parsing(links);
             } 
-             wendy.setThread(id, false);
-          } else if(!wendy.anyThreadOn()){
+            booleanArray.setThread(id, false);
+          } else if(!booleanArray.anyThreadOn()){
             break;
           }
         }
